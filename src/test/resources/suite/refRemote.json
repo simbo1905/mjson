@@ -3,7 +3,8 @@
 
 
         "description": "remote ref",
-        "schema": {"$ref": "file://src/test/resources/json-schema/JSON-Schema-Test-Suite/develop/remotes/integer.json"},
+        "schema": {"$ref": "json-schema/JSON-Schema-Test-Suite/develop/remotes/integer.json"},
+
         "tests": [
             {
                 "description": "remote ref valid",
@@ -19,7 +20,7 @@
     },
     {
         "description": "fragment within remote ref",
-        "schema": {"$ref": "file://src/test/resources/json-schema/JSON-Schema-Test-Suite/develop/remotes/subSchemas.json#/integer"},
+        "schema": {"$ref": "json-schema/JSON-Schema-Test-Suite/develop/remotes/subSchemas.json#/integer"},
         "tests": [
             {
                 "description": "remote fragment valid",
@@ -36,7 +37,7 @@
     {
         "description": "ref within remote ref",
         "schema": {
-            "$ref": "file://src/test/resources/json-schema/JSON-Schema-Test-Suite/develop/remotes/subSchemas.json#/refToInteger"
+            "$ref": "json-schema/JSON-Schema-Test-Suite/develop/remotes/subSchemas.json#/refToInteger"
         },
         "tests": [
             {
@@ -54,7 +55,7 @@
     {
         "description": "change resolution scope",
         "schema": {
-            "id": "file://src/test/resources/json-schema/JSON-Schema-Test-Suite/develop/remotes/",
+            "id": "json-schema/JSON-Schema-Test-Suite/develop/remotes/",
             "items": {
                 "id": "folder/",
                 "items": {"$ref": "folderInteger.json"}
