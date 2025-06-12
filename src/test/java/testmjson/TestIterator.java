@@ -31,6 +31,10 @@ public class TestIterator
 		Assert.assertNotNull(iter);
 		Assert.assertEquals(true, iter.hasNext());
 		Json val = iter.next();
+
+
+
+
 		Assert.assertTrue(val.isNull());
 		Assert.assertEquals(false, iter.hasNext());
 	}
