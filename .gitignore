@@ -10,3 +10,6 @@
 
 # Local Claude instructions
 CLAUDE.local.md
+CLAUDE.md
+src/test/resources/json-schema/
+src/test/resources/json-schema-draft-04.json
